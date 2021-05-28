@@ -1,0 +1,21 @@
+{
+	"InputPath" : "/mnt/e/goddessSort/Output/Run",
+	"ICCutPath" : "/mnt/e/Analysis/Analysis Code/Cuts/ICCuts/",
+	"ICCutPrefix" : "Pcut_P30dp",
+	"OutputPath" : "/mnt/d/Nuclear Phy/GoddessAnalysis/Output/",
+	"OutputFilePrefix" : "Goddess30P",
+	"Runs":["0048","0049","0050","0078","0079","0081","0083","0084","0088","0089",
+			"0102","0103","0104","0105"],
+	"BeamMass" : 29.97,
+	"TargetMass" : 2.014,
+	"EjectileMass" : 1.0072,
+	"RecoilMass" : 30.9737,
+	"GroundStateQValue" : 10.86,
+	"BeamEnergy" : 240,
+	"GretinaOffsetX1" : 7.061,
+	"GretinaOffsetX2" : 12.37,
+	"GretinaOffsetY" : 0.13,
+	"GretinaOffsetZ" : 0.2325,
+	"ClusterAngle" : 15
+}
+
