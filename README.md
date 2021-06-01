@@ -128,7 +128,18 @@ Example for **Run0081.root**
 	```
 	root Run0081.root
 	```
-2.
+2. Open the TBrowser:
+	```
+	TBrowser a
+	```
+3. Open icdE VS icE:
+	```
+	data->Draw(“icdE:icE>>(1024,0,4096,1024,0,4096)”,"","colz")
+	```	
+4. Select "logz" and zoom in
+5. Draw the graphical cut by selecting cut tool from view > Toolbar
+6. 	
+	
 	
 
 
