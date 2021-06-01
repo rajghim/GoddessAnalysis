@@ -384,5 +384,7 @@ void Analysis::Loop() {
     AddGenVQen->Write();
     dopAddGenVQen->Write();
 
+    std::cout << yellow << "Histograms stored in: " << OutputPath << OutputFilePrefix << "_SX3.root" << reset << std::endl;
+
     outputFile->Close();
 } //END OF THE ANALYSIS LOOP

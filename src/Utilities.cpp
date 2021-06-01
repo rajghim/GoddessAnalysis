@@ -28,7 +28,7 @@ std::cout << "                                                                  
 
 void UpstreamQQQ5WelcomeMessage(){
 
-std::cout << green << "                      ___         _    _               _             _         _" << std::endl;     
+std::cout << green << "                       ___         _    _               _             _         _" << std::endl;     
 std::cout << "                      / __|___  __| |__| |___ ______   /_\\  _ _  __ _| |_  _ __(_)___" << std::endl; 
 std::cout << "                     | (_ / _ \\/ _` / _` / -_|_-<_-<  / _ \\| ' \\/ _` | | || (_-< (_-<" << std::endl; 
 std::cout << "                      \\___\\___/\\__,_\\__,_\\___/__/__/ /_/ \\_\\_||_\\__,_|_|\\_, /__/_/__/" << std::endl; 

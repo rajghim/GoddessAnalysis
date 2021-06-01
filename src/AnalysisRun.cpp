@@ -27,11 +27,12 @@ TChain* MakeChain() {
     config_stream.close();
 
     TString InputPath = config["InputPath"].asString();
+    TString InputFilePrefix = config["InputFilePrefix"].asString();
 
     for(int i = 0; i < config["Runs"].size(); i++) {
         TString RunNumber = config["Runs"][i].asString();
         //Add all runs to the chain
-        chain->Add(InputPath + RunNumber + "_combined.root"); 
+        chain->Add(InputPath + InputFilePrefix + RunNumber + "_combined.root"); 
     } 
     return chain;
 }

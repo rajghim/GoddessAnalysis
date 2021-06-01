@@ -231,5 +231,6 @@ void Analysis::Loop() {
     BB10VSX3->Write();
     BB10stripVSX3strip->Write();
 
+	std::cout << yellow << "Histograms stored in: " << OutputPath << OutputFilePrefix << "_Downstream.root" << reset << std::endl;
     outputFile->Close();
 }// END OF THE ANALYSIS LOOP 
