@@ -51,17 +51,17 @@ endforeach()
 
 add_library(QQQ5GammaAnalysisLibrary SHARED src/Q5Gamma.cpp)
 target_link_libraries(QQQ5GammaAnalysisLibrary ${ROOT_LIBRARIES} Spectrum)
-add_executable(Q5Gamma src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp)
+add_executable(Q5Gamma src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp src/Utilities.cpp)
 target_link_libraries(Q5Gamma QQQ5GammaAnalysisLibrary)
 
 add_library(SX3GammaAnalysisLibrary SHARED src/SX3Gamma.cpp)
 target_link_libraries(SX3GammaAnalysisLibrary ${ROOT_LIBRARIES} Spectrum)
-add_executable(SX3Gamma src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp)
+add_executable(SX3Gamma src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp src/Utilities.cpp)
 target_link_libraries(SX3Gamma SX3GammaAnalysisLibrary)
 
 add_library(DownstreamAnalysisLibrary SHARED src/DownstreamAnalysis.cpp)
 target_link_libraries(DownstreamAnalysisLibrary ${ROOT_LIBRARIES} Spectrum)
-add_executable(Downstream src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp)
+add_executable(Downstream src/AnalysisRun.cpp src/jsoncpp.cpp src/EffectiveThickness.cpp src/Utilities.cpp)
 target_link_libraries(Downstream DownstreamAnalysisLibrary)
 
 

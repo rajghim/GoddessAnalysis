@@ -4,10 +4,13 @@
 #include <TRandom3.h>
 #include <string>
 #include "EffectiveThickness.h"
+#include "Utilities.h"
 #include "json/json.h"
 
 //MAIN ANALYSIS LOOP
 void Analysis::Loop() {
+	DownstreamWelcomeMessage();
+	
     if (fChain == 0) return;
 
     Long64_t nentries = fChain->GetEntriesFast();
@@ -127,7 +130,7 @@ void Analysis::Loop() {
         if(runNumber != prevRunNumber) {
             TFile *cutFile;
             TString cutFileName = ICCutPath + ICCutPrefix + runNumberStr + ".root";
-            std::cout << "Analyzing Run Number: " << runNumberStr << std::endl;
+            std::cout << cyan << "Analyzing Run Number: " << magenta << runNumberStr << reset << std::endl;
             cutFile = TFile::Open(cutFileName);
             TString cutName = Form("Pcut%d", runNumber);
             icdEECut = static_cast<TCutG*>(cutFile->Get(cutName));

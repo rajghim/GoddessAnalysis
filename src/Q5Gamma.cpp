@@ -5,6 +5,8 @@
 #include <string>
 #include "EffectiveThickness.h"
 #include "json/json.h"
+#include "Utilities.h"
+
 
 //DOPPLER CORRECTION FUNCTION DEFINITION
 Float_t dop(Float_t GamAngle, Float_t RecoilBeta, Float_t GamEnergy){
@@ -15,6 +17,7 @@ Float_t dop(Float_t GamAngle, Float_t RecoilBeta, Float_t GamEnergy){
 
 //MAIN ANALYSIS LOOP
 void Analysis::Loop() {
+    UpstreamQQQ5WelcomeMessage();
     if (fChain == 0) return;
 
     Long64_t nentries = fChain->GetEntriesFast();
@@ -121,7 +124,7 @@ void Analysis::Loop() {
         if(runNumber != prevRunNumber) {
             TFile *cutFile;
             TString cutFileName = ICCutPath + ICCutPrefix + runNumberStr + ".root";
-            std::cout << "Analyzing Run Number: " << runNumberStr << std::endl;
+            std::cout << cyan << "Analyzing Run Number: " << magenta << runNumberStr << reset << std::endl;
             cutFile = TFile::Open(cutFileName);
             TString cutName = Form("Pcut%d", runNumber);
             icdEECut = static_cast<TCutG*>(cutFile->Get(cutName));
