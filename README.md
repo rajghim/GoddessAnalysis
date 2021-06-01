@@ -3,6 +3,7 @@
 ```
 git clone https://github.com/rajghim/GoddessAnalysis.git
 cd GoddessAnalysis
+mkdir Output
 mkdir -p build && cd build
 cmake ..
 make
