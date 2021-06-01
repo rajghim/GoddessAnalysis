@@ -121,7 +121,9 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	```
 	Maximum angle for cluster addback	
 	```
-	
+
+## IC Cut Procedure
+	For a test run Run0081.root
 	
 
 
