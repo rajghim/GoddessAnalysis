@@ -117,7 +117,9 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	Gretina offsets in X, Y, and Z axes (in mm)
 	```
 - **ClusterAngle**
+	```
 	Maximum angle for cluster addback	
+	```
 	
 	
 
