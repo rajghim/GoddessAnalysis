@@ -134,11 +134,23 @@ Example for **Run0081.root**
 	```
 3. Open icdE VS icE:
 	```
-	data->Draw(“icdE:icE>>(1024,0,4096,1024,0,4096)”,"","colz")
+	data->Draw("icdE:icE>>(1024,0,4096,1024,0,4096)","","colz")
 	```	
 4. Select "logz" and zoom in
 5. Draw the graphical cut by selecting cut tool from view > Toolbar
-6. 	
+6. Use TCutG
+	```
+	TCUtG *mycut
+	mycut = (TCutG*)gROOT->GetListofSpecials()->FindObject("CUTG")
+	mycut->SetName("Pcut81")
+	```
+7. Create Cut File and Write
+	```
+	TFile *fc = new TFile("Pcut_p30dp0073.root","recreate")
+	fc->cd()
+	mycut->Write()
+	fc->Close()
+	.q
 	
 	
 
