@@ -123,7 +123,12 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	```
 
 ## IC Cut Procedure
-	For a test run Run0081.root
+Example for **Run0081.root**
+	1. Open the root file:
+	```
+	root Run0081.root
+	```
+	2.
 	
 
 
