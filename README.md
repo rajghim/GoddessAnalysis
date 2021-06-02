@@ -111,7 +111,7 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	```
 - **BeamMass, TargetMass, EjectileMass, RecoilMass, GroundStateQValue**
 	```
-	Masses of Beam, Target, Ejectile and Recoils respectively (in amu) and Ground State Q-Value (in MeV)
+	Masses of Beam, Target, Ejectile and Recoils respectively (in amu), Ground State Q-Value and Total Beam Energy (in MeV)
 	```
 - **GretinaOffsets**
 	```
