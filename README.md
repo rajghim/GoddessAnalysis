@@ -1,5 +1,5 @@
 # GoddessAnalysis
-This analysis script takes output from goddessSort unpacker (https://github.com/joshhooker/goddessSort), written by Josh Hooker, to analyze data from GODDESS (with GRETINA) setup. The script uses cubic spline class (https://github.com/joshhooker/CubicSplineClass), and energy loss class (https://github.com/joshhooker/EnergyLossClass), written entirely by Josh Hooker, to perform energy loss calculations.
+This analysis script takes output from goddessSort unpacker (https://github.com/joshhooker/goddessSort), written by Josh Hooker, to analyze data from GODDESS (with GRETINA) experiments. The script uses cubic spline class (https://github.com/joshhooker/CubicSplineClass), and energy loss class (https://github.com/joshhooker/EnergyLossClass), both written entirely by Josh Hooker, to perform energy loss calculations.
 ## Installation
 ```
 git clone https://github.com/rajghim/GoddessAnalysis.git
