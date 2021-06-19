@@ -63,6 +63,7 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	"InputFilePrefix": "Run",
 	"ICCutPath" : "/mnt/e/Analysis/Analysis Code/Cuts/ICCuts/",
 	"ICCutPrefix" : "Pcut_P30dp",
+	"ICCutNamePrefix" : "Pcut",
 	"OutputPath" : "/mnt/d/Nuclear Phy/GoddessAnalysis/Output/",
 	"OutputFilePrefix" : "Goddess30P",
 	"Runs":["0048","0049","0050","0078","0079","0081","0083","0084","0088","0089",
@@ -97,6 +98,10 @@ GoddessAnalysis uses config.json as the main configuration file. As of right now
 	```
 	The cut file prefix for the given runs. For a file title 'Pcut_p30dp0048.root', this should be 'Pcut_p30dp'
 	```
+- **ICCutNamePrefix**
+	```
+	The cut name prefix for the given runs. For a cutname title 'Pcut48', this should be 'Pcut'
+	```	
 - **OutputPath**
 	```
 	The path to directory to store output .root files.
@@ -146,7 +151,7 @@ GoddessAnalysis requires individual ic cut file for each run. Cut procedure exam
 	```
 7. Create Cut File and Write
 	```
-	TFile *fc = new TFile("Pcut_p30dp0073.root","recreate")
+	TFile *fc = new TFile("Pcut_p30dp0081.root","recreate")
 	fc->cd()
 	mycut->Write()
 	fc->Close()
