@@ -145,8 +145,8 @@ GoddessAnalysis requires individual ic cut file for each run. Cut procedure exam
 5. Draw the graphical cut by selecting cut tool from view > Toolbar
 6. Use TCutG
 	```
-	TCUtG *mycut
-	mycut = (TCutG*)gROOT->GetListofSpecials()->FindObject("CUTG")
+	TCutG *mycut
+	mycut = (TCutG*)gROOT->GetListofSpecials()->FindObject("CutG")
 	mycut->SetName("Pcut81")
 	```
 7. Create Cut File and Write
